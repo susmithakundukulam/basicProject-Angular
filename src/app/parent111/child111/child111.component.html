@@ -1,1 +1,9 @@
 <p>child111 works!</p>
+
+
+<input type="radio" value="red" name="color" [(ngModel)] = "color" > Red
+<input type="radio" value="green" name="color" [(ngModel)] = "color"> Green
+<input type="radio" value="blue" name="color" [(ngModel)] = "color"> Blue
+
+
+<p appSuperHighlight [color]="color"> Selected color</p>
