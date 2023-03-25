@@ -14,6 +14,9 @@ import { Child11Component } from './parent11/child11/child11.component';
 import { Child22Component } from './parent11/child22/child22.component';
 import { BasicHighlightDirective } from './basic-highlight.directive';
 import { BetterHighlightDirective } from './better-highlight.directive';
+import { SuperHighlightDirective } from './directives/super-highlight.directive';
+import { Parent111Component } from './parent111/parent111.component';
+import { Child111Component } from './parent111/child111/child111.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { BetterHighlightDirective } from './better-highlight.directive';
     Child11Component,
     Child22Component,
     BasicHighlightDirective,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    SuperHighlightDirective,
+    Parent111Component,
+    Child111Component
   ],
   imports: [
     BrowserModule,
