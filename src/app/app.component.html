@@ -1,0 +1,12 @@
+<h3>In app componet of {{title}}</h3>
+<hr>
+<app-server *ngFor = "let server of serverElements" [elements]="server" (serverDetails)="getServerDetails($event)"></app-server>
+
+
+{{newServerName}} 
+
+<hr>
+
+<app-parent1></app-parent1>
+<app-parent11></app-parent11>
+

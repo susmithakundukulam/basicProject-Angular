@@ -1,0 +1,17 @@
+<p>child11 works!</p>
+
+<!-- <input type="text" placeholder="child11 type any" [(ngModel)]="child11Value" (input)="typeInputValue()"> -->
+
+
+<input type="text" placeholder="child11 type any" #serverContentInput (input)="typeInputValue()">
+
+
+<p appBasicHighlight>Custom directive</p>
+
+<p appBetterHighlight> Custom directive using hostbinding </p>
+
+
+<input type="radio" value="male" name="gender" [(ngModel)] = "gender" (click) = "passData()"> Male
+<input type="radio" value="female" name="gender" [(ngModel)] = "gender" (click) = "passData()"> Female
+
+<p appBetterHighlight [genderVal]="gender"> radio button with cutsom directive</p>

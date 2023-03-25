@@ -1,0 +1,26 @@
+
+<button class="btn btn-primary" [disabled]="newServerNeeded" (click)="onCreateServer()">   Add new Server </button>
+
+<!-- event binding -->
+<input type="text" class="form-control" (input)="updateServerName($event)">
+
+<!-- two way binding -->
+<input type="text" class="form-control" [(ngModel)]="serverName">
+
+<!-- String interpolation -->
+<p> {{serverName}}</p>
+<p [innerText]="serverCreationStatus"></p>
+<!-- <p>servertest works! server is {{serverStatus}}.</p> -->
+
+<!-- ngIf Directive and else  -->
+<p *ngIf="isServerCreated; else noServer">servertest works! .Name is{{serverName}}</p>
+
+<ng-template #noServer>
+    <p>No serverTest created.</p>
+</ng-template>
+
+
+<p [ngStyle]="{backgroundColor: getColor()}">Server ngStyle</p>
+
+<!-- *ngFor -->
+<p *ngFor="let server of server; let i = index">{{i+1}}.{{server}}</p>
