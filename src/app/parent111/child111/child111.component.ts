@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 export class Child111Component {
 
   color:String = '';
+  
+
 
 }
